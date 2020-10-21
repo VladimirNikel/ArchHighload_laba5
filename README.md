@@ -13,12 +13,14 @@
 ## Инструкция по установке:
 1. Скачать/стянуть репозиторий
 1. Перейти в папку репозитория
-1. Выполнить команду `docker build -t <название образа> -f dockerfile . `, мною для работы используется исходный образ ubuntu, который дополнен наличием python'a. Поэтому для создания образов использую команды:
-* `docker build -t ubuntu/archhightload_laba5_1 -f dockerfile1 .`
-* `docker build -t ubuntu/archhightload_laba5_2 -f dockerfile2 .`
-1. Выполнить команду `docker run -it --name <название контейнера> -p 127.0.0.1:<порт>:8000 ubuntu/archhightload_laba2` для создания docker-контейнера из docker-образа. В рамках задания были выполнены команды:
-* `docker run -it --name laba5_1_archHL -p 127.0.0.1:5020:8000 ubuntu/archhightload_laba5_1`
-* `docker run -it --name laba5_2_archHL -p 127.0.0.1:5030:8000 ubuntu/archhightload_laba5_2`
+1. На сервере/серверах:
+- выполнить команду `docker build -t <название образа> -f dockerfile . `, мною для работы используется исходный образ ubuntu. Поэтому для создания образов использую команды:
+  * `docker build -t ubuntu/archhightload_laba5_1 -f dockerfile1 .`
+  * `docker build -t ubuntu/archhightload_laba5_2 -f dockerfile2 .`
+- выполнить команду `docker run -it --name <название контейнера> -p 127.0.0.1:<порт>:8000 ubuntu/archhightload_laba2` для создания docker-контейнера из docker-образа. В рамках задания были выполнены команды:
+  * `docker run -it --name laba5_1_archHL -p 127.0.0.1:5020:8000 ubuntu/archhightload_laba5_1`
+  * `docker run -it --name laba5_2_archHL -p 127.0.0.1:5030:8000 ubuntu/archhightload_laba5_2`
+1. На третьем сервере необходимо установить Nginx (инструкция приложена) и прописать в конфигурационном файле `/etc/nginx/nginx.config` как в приложенном к репозиторию одноименном файле.
 
 
 
