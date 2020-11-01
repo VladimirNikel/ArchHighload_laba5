@@ -57,4 +57,3 @@ python3 ./ArchHighload_laba5/main.py 1
 - GIT (устанавливается командой `sudo apt install git -y`)
 - Docker (устанавливается командой `sudo apt install -y docker-ce`) [дополнительная инструкция](https://losst.ru/ustanovka-docker-na-ubuntu-16-04)
 - Nginx (устанавливается командой `sudo apt install nginx`) [дополнительная инструкция](https://losst.ru/ustanovka-nginx-ubuntu-16-04)
-- GCC (устанавливается командой `sudo apt install build-essential`) [дополнительная инструкция](https://losst.ru/ustanovka-gcc-v-ubuntu-16-04)
